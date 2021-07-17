@@ -17,17 +17,24 @@
     <h2 class="m-3 p-3 text-center">Aaya Calculator</h2>
 
       <div class="form-group">
-        <label for="exampleInputEmail1">Enter Length</label>
-        <input class="form-control" id="length" aria-describedby="emailHelp" placeholder="Enter Length">
+        <label class="font-weight-bold for="exampleInputEmail1">Enter Length</label>
+        <input class="form-control" id="length" aria-describedby="emailHelp" placeholder="Enter Length in Feet">
+        <input class="form-control" id="lengthInch" aria-describedby="emailHelp" placeholder="Enter Length in Inch (1-11)" type="number" min="1" max="11">
       </div>
       <div class="form-group">
-        <label for="exampleInputPassword1">Enter Width</label>
-        <input class="form-control" id="width" placeholder="Enter Width">
+        <label class="font-weight-bold for="exampleInputPassword1">Enter Width</label>
+        <input class="form-control" id="width" placeholder="Enter Width in Feet">
+        <input class="form-control" id="widthInch" placeholder="Enter Width in Inch (1-11)" type="number" min="1" max="11">
       </div>
-      <button onclick="calculateAaya()" class="btn btn-primary">Calculate Aaya</button>
+      <button onclick="calculateAaya()" class="btn btn-primary">Calculate</button>
       <div class="container mt-4">
-        <h4>aayaNumber: <span id="aayaNumber"></span></h4>
-        <h4>varaPhala: <span id="varaPhala"></span></h4>
+        <h4> <span id="aayaNumber"></span></h4>
+        <h4> <span id="dhanam"></span></h4>
+        <h4> <span id="runam"></span></h4>
+        <h4> <span id="labham"></span></h4>
+        <h4> <span id="aayush"></span></h4>
+        <h4> <span id="varam"></span></h4>
+        <h4> <span id="tithi"></span></h4>
       </div>
   </div>
 
